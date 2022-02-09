@@ -25,12 +25,10 @@ def is_prime(number):
 def filter_numbers(numbers, argument):
     if argument == "even":
         return [number for number in numbers if number % 2 == 0]
+        # return filter(lambda number: number % 2 == 0)
     if argument == "odd":
         return [number for number in numbers if number % 2 != 0]
+        # return filter(lambda number: number % 2 == 1)
     if argument == "prime":
-        return [number for number in numbers if is_prime(number) == True]
+        return filter(is_prime,numbers)
 
-
-# numbers = [1,2,3,4,5,991832938487239487324]
-# numbers=power_numbers(numbers)
-# print(numbers)
