@@ -30,5 +30,5 @@ def filter_numbers(numbers, argument):
         return [number for number in numbers if number % 2 != 0]
         # return filter(lambda number: number % 2 == 1)
     if argument == "prime":
-        return filter(is_prime,numbers)
+        return list(filter(is_prime,numbers))
 
