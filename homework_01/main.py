@@ -23,12 +23,12 @@ def is_prime(number):
         return True
 
 def filter_numbers(numbers, argument):
-    if argument == "even":
+    if argument == EVEN:
         return [number for number in numbers if number % 2 == 0]
         # return filter(lambda number: number % 2 == 0)
-    if argument == "odd":
+    if argument == ODD:
         return [number for number in numbers if number % 2 != 0]
         # return filter(lambda number: number % 2 == 1)
-    if argument == "prime":
+    if argument == PRIME:
         return list(filter(is_prime,numbers))
 
