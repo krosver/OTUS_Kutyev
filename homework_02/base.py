@@ -14,7 +14,7 @@ class Vehicle(ABC):
 
 
     def start (self):
-        if (self.started == False):
+        if not self.started:
             if (self.fuel > 0):
                 self.started=True
             else:
